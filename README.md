@@ -1,4 +1,4 @@
-# Dell Inspiron 7000 (7x60) for macOS High Sierra
+# Dell Inspiron 7000 (7x60) for macOS High Sierra/Sierra
 
 这是我使用的Dell Inspiron 7000(7560)的CLOVER引导文件
 ## CLOVER
@@ -20,5 +20,8 @@
 
 > 备注：此文件未必适用于你的显示器，请根据自己的显示器提取EDID进行HIDPI制作
 
+## 更新日期：10-4-2017
 
+## QQ群:
+331686786 [一起黑苹果](http://shang.qq.com/wpa/qunwpa?idkey=db511a29e856f37cbb871108ffa77a6e79dde47e491b8f2c8d8fe4d3c310de91)
 
