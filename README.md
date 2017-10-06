@@ -9,6 +9,8 @@
 * 无线网卡更换为bcm94352z，驱动已通过 `config.plist` 加载
 * 其它 `ACPI` 补丁修复采用 `hotpatch` 方式，文件位于 `/CLOVER/ACPI/patched`
 ![screenshot18](http://ous2s14vo.bkt.clouddn.com/screenshot18.png)
+* 清理了下Drivers64UEFI目录，只保留需要的驱动程序，apfs.efi为不加载log版本。
+![Drivers64UEFI](http://ous2s14vo.bkt.clouddn.com/Drivers64UEFI.png)
 
 
 ## ALCPlugFix
