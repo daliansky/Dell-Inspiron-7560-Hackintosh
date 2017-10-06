@@ -139,15 +139,7 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>LPIT</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>RSDT-FACS</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>FIDT</string>
+				<string>BGRT</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -155,27 +147,11 @@
 			</dict>
 			<dict>
 				<key>Signature</key>
-				<string>#MCFG</string>
+				<string>DBGP</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>SaSsdt</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>RSDP</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SLIC</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>SataTabl</string>
+				<string>DMAR</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -183,59 +159,7 @@
 			</dict>
 			<dict>
 				<key>Signature</key>
-				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>XSDT</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>MDSX</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>FACS</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Ist</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>CtdpB</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>xh_rvp10</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>BGRT</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>RSDT</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>CpuPm</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>WSMT</string>
+				<string>FIDT</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
@@ -243,17 +167,23 @@
 			</dict>
 			<dict>
 				<key>Signature</key>
-				<string>DBGP</string>
+				<string>LPIT</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
-				<string>MATS</string>
+				<string>MCFG</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>sensrhub</string>
+				<string>SLIC</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>RSDT</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>WSMT</string>
 			</dict>
 		</array>
 		<key>ResetAddress</key>
@@ -327,6 +257,8 @@
 	<dict>
 		<key>Audio</key>
 		<dict>
+			<key>AFGLowPowerState</key>
+			<true/>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -367,6 +299,17 @@
 			<false/>
 			<key>Speed</key>
 			<integer>8</integer>
+		</dict>
+		<key>Scan</key>
+		<dict>
+			<key>Entries</key>
+			<true/>
+			<key>Legacy</key>
+			<false/>
+			<key>Linux</key>
+			<true/>
+			<key>Tool</key>
+			<true/>
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
