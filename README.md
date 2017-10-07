@@ -32,6 +32,8 @@
     * 添加一键开启HIDPI脚本，同时解决内屏黑屏问题，感谢 `冰水加劲Q` 提供的脚本
 * 10-7-2017
     * 修复bcm94352z在10.12下的WIFI驱动
+* 10-4-2017
+    * 加入显示器edid和HIDPI
 
 ## QQ群:
 331686786 [一起黑苹果](http://shang.qq.com/wpa/qunwpa?idkey=db511a29e856f37cbb871108ffa77a6e79dde47e491b8f2c8d8fe4d3c310de91)
