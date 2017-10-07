@@ -18,11 +18,9 @@
 
 进入 `ALCPlugFix` 目录，双击 `install双击自动安装.command` 安装
 
-## HIDPI
-将相关文件复制到 `/System/Library/Displays/Contents/Resources/Overrides/` 以实现下面的效果：
+## HIDPI **感谢 @冰水加劲Q**
+进入 `一键开启HIDPI并注入EDID` 目录，点击 `双击.command` 命令执行后以实现下面的效果：
 ![hidpi](http://ous2s14vo.bkt.clouddn.com/hidpi.png)
-
-> 备注：此文件未必适用于你的显示器，请根据自己的显示器提取EDID进行HIDPI制作
 
 ## refind
 另一个BootLoader
