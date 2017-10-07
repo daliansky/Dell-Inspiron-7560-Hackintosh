@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DisplayBacklight</key>
+	<real>575.5</real>
+	<key>DisplayBrightReflection</key>
+	<real>573.10000000000002</real>
+	<key>DisplayDarkReflection</key>
+	<real>1.1000000000000001</real>
+	<key>DisplayLeakage</key>
+	<real>0.41899999999999998</real>
+	<key>DisplayLowestLevel</key>
+	<real>2</real>
+	<key>DisplayLowestMeasured</key>
+	<real>0.43230000000000002</real>
+	<key>DisplayProductID</key>
+	<integer>45061</integer>
+	<key>DisplayProductName</key>
+	<string>Color LCD</string>
+	<key>DisplayVendorID</key>
+	<integer>1552</integer>
+	<key>IODisplayEDID</key>
+	<data>
+	AP///////wAGEBKgAAAAABwWAQS1MBt4Im+xp1VMniUMUFQAAAABAQEBAQEBAQEBAQEB
+	AQEBtDuASnE4NEBQNmgAWMEQAAAawy+ASnE4NEBQNmgAWMEQAAAaAAAA/ABpTWFjCiAg
+	ICAgICAgAAAAAAAAQTGWARAAAAoBCiAgAIM=
+	</data>
+	<key>IOGFlags</key>
+	<integer>4</integer>
+	<key>scale-resolutions</key>
+	<array>
+		<data>
+		AAAGQAAAA4QA
+		</data>
+		<data>
+		AAALQAAABlQA
+		</data>
+		<data>
+		AAAKAAAABaAA
+		</data>
+	</array>
+	<key>target-default-ppmm</key>
+	<real>10.069930100000001</real>
+</dict>
+</plist>
