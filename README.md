@@ -28,6 +28,15 @@
 
 
 ## 更新
+* 10-17-2017
+    * EFI更新，修正显卡驱动
+    * 驱动更新：
+        * Lilu v1.2.0 
+        * AppleALC v1.2.1
+        * IntelGraphicsDVMTFixup v1.2.0
+        * AirportBrcmFixup v1.1.0
+    * 驱动修复：
+        * IntelGraphicsFixup v1.2.0 
 * 10-8-2017
     * 添加一键开启HIDPI脚本，同时解决内屏黑屏问题，感谢 `冰水加劲Q` 提供的脚本
 * 10-7-2017
