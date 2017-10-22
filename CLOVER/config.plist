@@ -181,10 +181,6 @@
 				<key>Signature</key>
 				<string>RSDT</string>
 			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>WSMT</string>
-			</dict>
 		</array>
 		<key>ResetAddress</key>
 		<string>0xB2</string>
@@ -224,7 +220,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>darkwake=8 -disablegfxfirmware -igfxbeta -cpufdbg -cpufbeta</string>
+		<string>darkwake=8 -disablegfxfirmware -cpufdbg -cpufbeta -igfxbeta</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -261,11 +257,6 @@
 			<true/>
 			<key>ResetHDA</key>
 			<true/>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>WIFI</key>
-			<string>0x43a014e4</string>
 		</dict>
 		<key>SetIntelBacklight</key>
 		<true/>
@@ -320,19 +311,8 @@
 	<dict>
 		<key>EDID</key>
 		<dict>
-			<key>Custom</key>
-			<data>
-			AP///////wANruAVAAAAABYaAQSVIhN4Aihll1lUjiceUFQAAAAB
-			AQEBAQEBAQEBAQEBAQEBtDuASnE4NEBQNmgAWMEQAAAawy+ASnE4
-			NEBQNmgAWMEQAAAaAAAA/gA1MktGNoAxNTZIQ0EKAAAAAAAAQTGW
-			ARAAAAoBCiAgAOg=
-			</data>
 			<key>Inject</key>
 			<false/>
-			<key>ProductID</key>
-			<string>45061</string>
-			<key>VendorID</key>
-			<string>1552</string>
 		</dict>
 		<key>Inject</key>
 		<dict>
@@ -383,6 +363,22 @@
 		</array>
 		<key>KextsToPatch</key>
 		<array>
+			<dict>
+				<key>Comment</key>
+				<string>1536MB-&gt;20148MB</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AQMDAwAAIAIAAAAAAAAAYA==
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AQMDAwAAIAIAAAAAAAAAgA==
+				</data>
+			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>eDP,0x59160000 credit syscl</string>
@@ -481,40 +477,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>初始化fvco以加载BCM4360驱动[10.12.x] - Darkvoid</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				gflSqgAAdSk=
-				</data>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AirPort.Brcm4360</string>
-				<key>Replace</key>
-				<data>
-				gflSqgAAZpA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>10.11+-BT4LE-Handoff-Hotspot-lisai9093</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				SIX/dEdIiwc=
-				</data>
-				<key>Name</key>
-				<string>IOBluetoothFamily</string>
-				<key>Replace</key>
-				<data>
-				Qb4PAAAA60Q=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>10.12+-第二阶段花屏补丁</string>
 				<key>Disabled</key>
 				<false/>
@@ -585,7 +547,7 @@
 				<key>Comment</key>
 				<string>ALC256 HDA Patch</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				hBnUEQ==
@@ -605,8 +567,12 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x3E7</string>
+		<key>MLB</key>
+		<string>C02619300N6GDW61B</string>
 		<key>ROM</key>
-		<string>UseMacAddr0</string>
+		<data>
+		CG1BUD34
+		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -621,7 +587,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02752609OPF2FR1F</string>
+		<string>C02741301GUDM67JC</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -642,14 +608,16 @@
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<true/>
 		<key>PlatformFeature</key>
 		<string>0x1A</string>
 		<key>ProductName</key>
 		<string>MacBookPro14,2</string>
 		<key>SerialNumber</key>
-		<string>C02VW1X0HV2N</string>
+		<string>C02VKNRCHV2N</string>
+		<key>SmUUID</key>
+		<string>DB03E73C-F31D-49DD-B12F-9B5FA87042D5</string>
+		<key>Trust</key>
+		<false/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
@@ -658,9 +626,9 @@
 		<key>BacklightLevel</key>
 		<string>0x0100</string>
 		<key>CustomUUID</key>
-		<string>0269ABF1-61AE-0F51-9615-AA65ED0B40AD</string>
+		<string>9A0B405C-B038-005D-B38F-CC00C1A1FAE3</string>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
