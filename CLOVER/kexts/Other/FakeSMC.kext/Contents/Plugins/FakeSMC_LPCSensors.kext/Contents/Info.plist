@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>16E195</string>
+	<string>17B35a</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.25.1426</string>
+	<string>6.26-322-g1b20eab7.1765</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,21 +25,21 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1426</string>
+	<string>1765</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>8E162</string>
+	<string>8E3004b</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>16E185</string>
+	<string>12D75</string>
 	<key>DTSDKName</key>
-	<string>macosx10.12</string>
+	<string>macosx10.8</string>
 	<key>DTXcode</key>
-	<string>0830</string>
+	<string>0833</string>
 	<key>DTXcodeBuild</key>
-	<string>8E162</string>
+	<string>8E3004b</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>Fintek F718x Monitor</key>
@@ -843,6 +843,7 @@
 			<string>LPCSensors</string>
 			<key>IONameMatch</key>
 			<array>
+				<string>ITE,IT8628E</string>
 				<string>ITE,IT8512F</string>
 				<string>ITE,IT8505F</string>
 				<string>ITE,IT8712F</string>
@@ -853,10 +854,12 @@
 				<string>ITE,IT8726F</string>
 				<string>ITE,IT8620E</string>
 				<string>ITE,IT8628E</string>
+				<string>ITE,IT8686E</string>
 				<string>ITE,IT8728F</string>
 				<string>ITE,IT8752F</string>
 				<string>ITE,IT8771E</string>
 				<string>ITE,IT8772E</string>
+				<string>ITE,IT8792E</string>
 			</array>
 			<key>IOProbeScore</key>
 			<string>2000</string>
@@ -1353,6 +1356,8 @@
 					<string>IT8772E</string>
 					<key>IT8628E</key>
 					<string>IT8772E</string>
+					<key>IT8686E</key>
+					<string>IT8772E</string>
 					<key>IT8721F</key>
 					<string>IT8772E</string>
 					<key>IT8728F</key>
@@ -1417,6 +1422,8 @@
 							<integer>0</integer>
 						</dict>
 					</dict>
+					<key>IT8792E</key>
+					<string>IT8772E</string>
 				</dict>
 				<key>Gigabyte</key>
 				<dict>
@@ -1808,6 +1815,84 @@
 					<string>IT8728F</string>
 					<key>IT8628E</key>
 					<string>IT8728F</string>
+					<key>IT8686E</key>
+					<dict>
+						<key>FANIN0</key>
+						<string></string>
+						<key>FANIN1</key>
+						<string></string>
+						<key>FANIN2</key>
+						<string></string>
+						<key>FANIN3</key>
+						<string></string>
+						<key>TEMPIN0</key>
+						<string>Mainboard</string>
+						<key>TEMPIN1</key>
+						<string>CPU Heatsink</string>
+						<key>VIN0</key>
+						<string>CPU Core</string>
+						<key>VIN1</key>
+						<dict>
+							<key>gain</key>
+							<integer>650</integer>
+							<key>name</key>
+							<string>Main 3V</string>
+							<key>offset</key>
+							<integer>0</integer>
+							<key>reference</key>
+							<integer>0</integer>
+						</dict>
+						<key>VIN2</key>
+						<dict>
+							<key>gain</key>
+							<integer>5000</integer>
+							<key>name</key>
+							<string>Main 12V</string>
+							<key>offset</key>
+							<integer>0</integer>
+							<key>reference</key>
+							<integer>0</integer>
+						</dict>
+						<key>VIN3</key>
+						<dict>
+							<key>gain</key>
+							<integer>1500</integer>
+							<key>name</key>
+							<string>Main 5V</string>
+							<key>offset</key>
+							<integer>0</integer>
+							<key>reference</key>
+							<integer>0</integer>
+						</dict>
+						<key>VIN4</key>
+						<string>CPU GFX</string>
+						<key>VIN5</key>
+						<string>CPU VRM</string>
+						<key>VIN6</key>
+						<string>Memory</string>
+						<key>VIN7</key>
+						<dict>
+							<key>gain</key>
+							<integer>1000</integer>
+							<key>name</key>
+							<string>Auxiliary 3V</string>
+							<key>offset</key>
+							<integer>0</integer>
+							<key>reference</key>
+							<integer>0</integer>
+						</dict>
+						<key>VIN8</key>
+						<dict>
+							<key>gain</key>
+							<integer>1000</integer>
+							<key>name</key>
+							<string>CMOS Battery</string>
+							<key>offset</key>
+							<integer>0</integer>
+							<key>reference</key>
+							<integer>0</integer>
+						</dict>
+					</dict>
 					<key>IT8712F</key>
 					<string>IT8720F</string>
 					<key>IT8716F</key>
@@ -2003,6 +2088,8 @@
 							<integer>0</integer>
 						</dict>
 					</dict>
+					<key>IT8792E</key>
+					<string>IT8772E</string>
 					<key>P31-ES3G</key>
 					<dict>
 						<key>FANIN0</key>
@@ -2432,6 +2519,84 @@
 					</dict>
 					<key>X58A-UD7</key>
 					<string>X58A-UD3R</string>
+					<key>Z270M-D3H-CF</key>
+					<dict>
+						<key>FANIN0</key>
+						<string></string>
+						<key>FANIN1</key>
+						<string></string>
+						<key>FANIN2</key>
+						<string></string>
+						<key>FANIN3</key>
+						<string></string>
+						<key>TEMPIN0</key>
+						<string>System</string>
+						<key>TEMPIN1</key>
+						<string>Memory</string>
+						<key>VIN0</key>
+						<string>CPU Core</string>
+						<key>VIN1</key>
+						<dict>
+							<key>gain</key>
+							<integer>650</integer>
+							<key>name</key>
+							<string>Main 3V</string>
+							<key>offset</key>
+							<integer>0</integer>
+							<key>reference</key>
+							<integer>0</integer>
+						</dict>
+						<key>VIN2</key>
+						<dict>
+							<key>gain</key>
+							<integer>5000</integer>
+							<key>name</key>
+							<string>Main 12V</string>
+							<key>offset</key>
+							<integer>0</integer>
+							<key>reference</key>
+							<integer>0</integer>
+						</dict>
+						<key>VIN3</key>
+						<dict>
+							<key>gain</key>
+							<integer>1500</integer>
+							<key>name</key>
+							<string>Main 5V</string>
+							<key>offset</key>
+							<integer>0</integer>
+							<key>reference</key>
+							<integer>0</integer>
+						</dict>
+						<key>VIN4</key>
+						<string>CPU GFX</string>
+						<key>VIN5</key>
+						<string>CPU VRM</string>
+						<key>VIN6</key>
+						<string>Memory</string>
+						<key>VIN7</key>
+						<dict>
+							<key>gain</key>
+							<integer>1000</integer>
+							<key>name</key>
+							<string>Auxiliary 3V</string>
+							<key>offset</key>
+							<integer>0</integer>
+							<key>reference</key>
+							<integer>0</integer>
+						</dict>
+						<key>VIN8</key>
+						<dict>
+							<key>gain</key>
+							<integer>1000</integer>
+							<key>name</key>
+							<string>CMOS Battery</string>
+							<key>offset</key>
+							<integer>0</integer>
+							<key>reference</key>
+							<integer>0</integer>
+						</dict>
+					</dict>
 					<key>Z68A-D3H-B3</key>
 					<string>Z68X-UD7-B3</string>
 					<key>Z68AP-D3</key>
@@ -4984,9 +5149,9 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2015 kozlek, slice, usr-sse2, navi, THe King. All rights reserved.</string>
+	<string>Copyright © 2017 kozlek, slice, usr-sse2, navi, THe King. All rights reserved.</string>
 	<key>OSBundleCompatibleVersion</key>
-	<string>1212</string>
+	<string>1429</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>com.apple.iokit.IOACPIFamily</key>
@@ -5002,9 +5167,9 @@
 		<key>com.apple.kpi.unsupported</key>
 		<string>10.6</string>
 		<key>org.netkas.driver.FakeSMC</key>
-		<string>1212</string>
+		<string>1429</string>
 	</dict>
-	<key>OSBundleRequired</key>
-	<string>Root</string>
+	<key>Source Code</key>
+	<string>"https://github.com/RehabMan/OS-X-FakeSMC-kozlek.git"</string>
 </dict>
 </plist>
