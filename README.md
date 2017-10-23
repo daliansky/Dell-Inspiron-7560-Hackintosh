@@ -28,11 +28,12 @@
 
 
 ## 更新
-* 10-21-2017
-    * Clover 常规更新 Clover_v2.4k_r4259
-    * 驱动更新：
-        * FakeSMC v1765
-    * 修改BCM94352z驱动方式，将注入信息移动到FakeSMC，移除config.plist中的相关信息
+* 10-4-2017
+    * 加入显示器edid和HIDPI
+* 10-7-2017
+    * 修复bcm94352z在10.12下的WIFI驱动
+* 10-8-2017
+    * 添加一键开启HIDPI脚本，同时解决内屏黑屏问题，感谢 `冰水加劲Q` 提供的脚本
 * 10-17-2017
     * EFI更新，修正显卡驱动
     * 驱动更新：
@@ -42,12 +43,17 @@
         * AirportBrcmFixup v1.1.0
     * 驱动修复：
         * IntelGraphicsFixup v1.2.0 
-* 10-8-2017
-    * 添加一键开启HIDPI脚本，同时解决内屏黑屏问题，感谢 `冰水加劲Q` 提供的脚本
-* 10-7-2017
-    * 修复bcm94352z在10.12下的WIFI驱动
-* 10-4-2017
-    * 加入显示器edid和HIDPI
+* 10-21-2017
+    * Clover 常规更新 Clover_v2.4k_r4259
+    * 驱动更新：
+        * FakeSMC v1765
+    * 修改BCM94352z驱动方式，将注入信息移动到FakeSMC，移除config.plist中的相关信息
+
+## 如果你认可我的工作，可以通过 `打赏` 支持我后续的更新
+|微信|支付宝|
+| --- | --- |
+|![wechatpay_160](http://ous2s14vo.bkt.clouddn.com/wechatpay_160.jpg)|![alipay_160](http://ous2s14vo.bkt.clouddn.com/alipay_160.jpg)|
+
 
 ## QQ群:
 331686786 [一起黑苹果](http://shang.qq.com/wpa/qunwpa?idkey=db511a29e856f37cbb871108ffa77a6e79dde47e491b8f2c8d8fe4d3c310de91)
