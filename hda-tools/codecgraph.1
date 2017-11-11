@@ -1,0 +1,49 @@
+.TH "CODECGRAPH" "1" "Version 1\&.0" "Jan 2008" "HDA tools" 
+.PP 
+.SH "NAME" 
+codecgraph - hda-intel codec graph generator
+.PP 
+.SH "SYNOPSIS" 
+\fBcodecgraph\fP
+[\fB-f\fP \fIformat\fP]
+[\fB-h\fP]
+[\fB-o\fP \fIname\fP]
+[\fB-v\fP]
+[\fIcodecfile\fP]
+.PP 
+.SH "DESCRIPTION" 
+\fBcodecgraph\fP generates a graph based on the ALSA description of a
+High Definition Audio codec\&. The generated graph depicts the HDA codec
+layout and node connections, helping driver troubleshooting and
+maintenance\&. In Linux this description is available at
+\f(CW/proc/asound/card*/codec#*\fP\&.
+.PP 
+.SH "OPTIONS" 
+.IP "\fB-f\fP \fIformat\fP" 
+Specify the format of the generated graph\&. Valid formats are all
+formats accepted by \fBdot(1)\fP, including \fBps\fP (PostScript)\&,
+\fBsvg\fP (Structured Vector Graphics)\&, \fBfig\fP (XFIG graphics)
+and \fBpng\fP (Portable Network Graphics)\&.
+.IP "\fB-h\fP"
+Show usage information and exit\&.
+.IP "\fB-o\fP \fIname\fP" 
+Set the output file name\&.
+.IP "\fB-v\fP" 
+Print version information and exit\&.
+.PP 
+.SH "EXAMPLES" 
+Generate a graph from codec.txt in PNG format:
+.IP "" 
+\f(CWcodecgraph -f png codec.txt\fP
+.PP 
+Generate a graph for the local host HDA codec data:
+.IP "" 
+\f(CWcodecgraph\fP
+.PP 
+.SH "SEE ALSO" 
+dot(1)
+.PP 
+.SH "AUTHOR" 
+Eduardo Habkost <ehabkost@raisama.net>\&. Wrapper script
+by Claudio Matsuoka <cmatsuoka@gmail.com>\&.
+.PP 

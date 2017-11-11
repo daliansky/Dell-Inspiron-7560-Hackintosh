@@ -1,0 +1,85 @@
+#!/bin/sh
+
+version="1.0"
+name=`basename $0`
+dir=`dirname $0`
+fmt="svg"
+usage="Usage: $name [-f format] [-h] [-o name] [-v] [codecfile]"
+help="Options:
+  -f format     Set output format (svg, ps, png), default is $fmt
+  -h            Display list of parameters and exit
+  -o name       Set output file name
+  -v            Display version information and exit
+"
+
+while getopts hvf:o: opt
+do
+    case "$opt" in
+    f)				# specify output file format
+         fmt="$OPTARG"
+         ;;
+    h)
+        echo "$usage" 1>&2
+        echo "$help" 1>&2
+        exit 0
+        ;;
+    o)				# specify output file name
+         outfile="$OPTARG"
+         ;;
+    v)				# display version information
+	echo "$name $version"
+	exit 0
+        ;;
+    \?)	
+        echo "$usage" 1>&2
+        exit 1
+        ;;
+    esac
+done
+shift `expr $OPTIND - 1`
+
+
+codecfile=$1
+
+if [ -z "$codecfile" ]; then
+    codecfile=`ls /proc/asound/card*/codec*|head -1 2>/dev/null`
+    if [ -n "$codecfile" ]; then
+       echo "Reading codec data from $codecfile"
+    fi
+fi
+
+if [ -z "$codecfile" ]; then
+    echo "error: codec file not specified" >&2
+    exit 1
+fi
+
+if [ ! -x $dir/codecgraph.py ]; then
+    echo "error: can't execute codecgraph.py (package corrupt?)" >&2
+    exit 1
+fi
+
+if [ -z "`which dot`" ]; then
+    echo "error: dot executable not found (did you install graphviz?)" >&2
+    exit 1
+fi
+
+if [ ! -r "$codecfile" ]; then
+    echo "error: can't read input file $codecfile" >&2
+    exit 1
+fi
+
+if [ -z "$outfile" ]; then
+    outfile="`basename $codecfile`"
+fi
+
+cat $codecfile | grep -v "^[\t ]*$" | head -1 | grep ^Codec:
+if [ $? -ne 0 ]; then
+    echo "error: $codecfile not a codec description" 2>&1
+    exit 1
+fi
+
+dotfile=`mktemp -t codecgraph.XXXXXX`
+$dir/codecgraph.py $codecfile > $dotfile
+echo Generating $outfile.$fmt
+dot -T$fmt -o$outfile.$fmt $dotfile
+rm $dotfile
