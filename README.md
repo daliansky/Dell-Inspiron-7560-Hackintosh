@@ -50,7 +50,7 @@
     * 修改BCM94352z驱动方式，将注入信息移动到FakeSMC，移除config.plist中的相关信息
 * 11-12-2017
     * Clover 常规更新
-        * Clover_v2.4k_r4259
+        * Clover_v2.4k_r4298
     * ALC256声卡驱动更新
         * 添加全新id:56
         * 去除底噪
