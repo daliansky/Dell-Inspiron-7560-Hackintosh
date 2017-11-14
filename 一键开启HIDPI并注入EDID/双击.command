@@ -8,8 +8,10 @@ function _init(){
 
     Vid=$(echo "obase=16;$VendorID" | bc | tr 'A-Z' 'a-z')
     Pid=$(echo "obase=16;$ProductID" | bc | tr 'A-Z' 'a-z')
-    EDid=$(echo $EDID | xxd -r -p | base64)
 
+    edID=$(echo $EDID | sed 's/../b5/21')
+
+    EDid=$(echo $edID | xxd -r -p | base64)
     thisDir=$(dirname $0)
     thatDir="/System/Library/Displays/Contents/Resources/Overrides"
 }
@@ -31,28 +33,22 @@ cat > "$dpiFile" <<-\HIDPI
     <key>DisplayVendorID</key>
     <integer>VID</integer>
     <key>DisplayProductName</key>
-    <string>Color LCD</string> 
+    <string>Color LCD</string>
     <key>IODisplayEDID</key>
     <data>
         EDid
-    </data> 
+    </data>
     <key>scale-resolutions</key>
     <array>
-        <data>AAAMgAAABwgA</data>
-        <data>AAALQAAABlQA</data>
-        <data>AAAKAAAABaAA</data>
+        <data>
+        AAAMgAAABwgA
+        </data>
+        <data>
+        AAALQAAABlQA
+        </data>
     </array>
     <key>target-default-ppmm</key>
     <real>10.0699301</real>
-    <key>edid-patches</key>
-    <array>
-        <dict>
-            <key>offset</key>
-            <integer>72</integer>
-            <key>data</key>
-            <data>AAAAEAAAAAAAAAAAAAAAAAAA</data>
-        </dict>
-    </array>
 </dict>
 </plist>
 HIDPI
