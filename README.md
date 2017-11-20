@@ -18,7 +18,7 @@
 
 进入 `ALCPlugFix` 目录，双击 `install双击自动安装.command` 安装
 
-## HIDPI **感谢 @冰水加劲Q**
+## HIDPI **感谢 @[冰水加劲Q](https://github.com/xzhih)**
 进入 `一键开启HIDPI并注入EDID` 目录，点击 `双击.command` 命令执行后以实现下面的效果：
 ![hidpi](http://ous2s14vo.bkt.clouddn.com/hidpi.png)
 
