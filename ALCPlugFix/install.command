@@ -12,6 +12,5 @@ sudo cp -a "$path/good.win.ALCPlugFix.plist" /Library/LaunchAgents/
 sudo chmod 644 /Library/LaunchAgents/good.win.ALCPlugFix.plist
 sudo chown root:wheel /Library/LaunchAgents/good.win.ALCPlugFix.plist
 sudo launchctl load /Library/LaunchAgents/good.win.ALCPlugFix.plist
-echo '安装ALCPlugFix守护进程完成！'
-echo '如果想重建缓存请使用程序KEXT UTILITY!'
-bash read -p '按任何键退出'
+echo 'Install the ALCPlugFix daemon complete!'
+bash read -p 'Press any key to exit'
