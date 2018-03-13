@@ -69,7 +69,7 @@
         * Clover_v2.4k_r4418
         * drivers64UEFI更新
             * 使用AptioMemoryFix.efi彻底解决内存分配不足卡+++问题
-            * Apfs.efi常规更新到10.13.4Beta3
+            * Apfs.efi常规更新到10.13.4Beta5
     * 驱动更新
         * InterGraphicsFixup v1.2.5
         * AppleALC v1.2.3
