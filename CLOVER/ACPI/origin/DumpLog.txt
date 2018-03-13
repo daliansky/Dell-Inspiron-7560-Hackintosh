@@ -1,231 +1,222 @@
-8:906  2:265  Found BIOS RSDP at EB510
-8:906  0:000  Printing ACPI tables from RSDP EB510 ...
-8:906  0:000   EB510: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
-8:906  0:000    (Xsdt: 6F0620C8, Rsdt: 6F062028)
-8:906  0:000    6F0620C8: 'XSDT', 'CBX3   ', Rev: 1, Len: 276
-8:906  0:000    6F062028: 'RSDT', 'CBX3   ', Rev: 1, Len: 156
-8:906  0:000    Tables in Xsdt: 30
-8:906  0:000    0. 6F0846F8: 'FACP', 'CBX3   ', Rev: 5, Len: 268
-8:906  0:000        (Dsdt: 6F062270, Facs: 6F9F2F80, XDsdt: 6F062270, XFacs: 0)
-8:906  0:000        6F062270: 'DSDT', 'CBX3   ', Rev: 2, Len: 140418
-8:908  0:001        6F9F2F80: 'FACS', Ver: 2, Len: 64
-8:908  0:000    1. 6F084808: 'APIC', 'CBX3   ', Rev: 3, Len: 132
-8:908  0:000    2. 6F084890: 'FPDT', 'CBX3   ', Rev: 1, Len: 68
-8:908  0:000    3. 6F0848D8: 'FIDT', 'CBX3   ', Rev: 1, Len: 156
-8:908  0:000    4. 6F084978: 'MCFG', 'CBX3   ', Rev: 1, Len: 60
-8:908  0:000    5. 6F0849B8: 'HPET', 'CBX3   ', Rev: 1, Len: 56
-8:908  0:000    6. 6F0849F0: 'SSDT', 'SataTabl', Rev: 1, Len: 882
-8:908  0:000    7. 6F084D68: 'BOOT', 'CBX3    ', Rev: 1, Len: 40
-8:908  0:000    8. 6F084D90: 'SSDT', 'SaSsdt ', Rev: 2, Len: 4833
-8:908  0:000    9. 6F086078: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
-8:908  0:000    10. 6F0860B0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
-8:908  0:000    11. 6F086768: 'UEFI', '', Rev: 1, Len: 66
-8:908  0:000    12. 6F0867B0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
-8:908  0:000    13. 6F087690: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
-8:908  0:000    14. 6F087728: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
-8:908  0:000    15. 6F087750: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
-8:908  0:000    16. 6F087898: 'SSDT', 'sensrhub', Rev: 2, Len: 671
-8:908  0:000    17. 6F087B38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
-8:908  0:000    18. 6F08AB40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
-8:908  0:000    19. 6F08AD58: 'DBGP', '', Rev: 1, Len: 52
-8:908  0:000    20. 6F08AD90: 'DBG2', '', Rev: 0, Len: 84
-8:908  0:000    21. 6F08ADE8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
-8:908  0:000    22. 6F090A10: 'MSDM', 'CBX3   ', Rev: 3, Len: 85
-8:908  0:000    23. 6F090A68: 'SLIC', 'CBX3   ', Rev: 3, Len: 374
-8:908  0:000    24. 6F090BE0: 'SSDT', 'SgUlt', Rev: 2, Len: 1053
-8:908  0:000    25. 6F091000: 'SSDT', 'SgPch', Rev: 2, Len: 1874
-8:908  0:000    26. 6F091758: 'DMAR', 'KBL ', Rev: 1, Len: 240
-8:908  0:000    27. 6F091848: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
-8:908  0:000    28. 6F091880: 'SSDT', 'OptTabl', Rev: 1, Len: 7776
-8:908  0:000    29. 6F0936E0: 'BGRT', '', Rev: 0, Len: 56
-8:908  0:000    Tables in Rsdt: 30
-8:908  0:000    0. 6F0621E8: 'FACP', 'CBX3   ', Rev: 2, Len: 132
-8:908  0:000        (Dsdt: 6F062270, Facs: 6F9F2F40)
-8:908  0:000        6F062270: 'DSDT', 'CBX3   ', Rev: 2, Len: 140418
-8:909  0:001        6F9F2F40: 'FACS', Ver: 0, Len: 64
-8:909  0:000    1. 6F084808: 'APIC', 'CBX3   ', Rev: 3, Len: 132
-8:909  0:000    2. 6F084890: 'FPDT', 'CBX3   ', Rev: 1, Len: 68
-8:909  0:000    3. 6F0848D8: 'FIDT', 'CBX3   ', Rev: 1, Len: 156
-8:909  0:000    4. 6F084978: 'MCFG', 'CBX3   ', Rev: 1, Len: 60
-8:909  0:000    5. 6F0849B8: 'HPET', 'CBX3   ', Rev: 1, Len: 56
-8:909  0:000    6. 6F0849F0: 'SSDT', 'SataTabl', Rev: 1, Len: 882
-8:909  0:000    7. 6F084D68: 'BOOT', 'CBX3    ', Rev: 1, Len: 40
-8:909  0:000    8. 6F084D90: 'SSDT', 'SaSsdt ', Rev: 2, Len: 4833
-8:909  0:000    9. 6F086078: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
-8:909  0:000    10. 6F0860B0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
-8:909  0:000    11. 6F086768: 'UEFI', '', Rev: 1, Len: 66
-8:909  0:000    12. 6F0867B0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
-8:909  0:000    13. 6F087690: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
-8:909  0:000    14. 6F087728: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
-8:909  0:000    15. 6F087750: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
-8:909  0:000    16. 6F087898: 'SSDT', 'sensrhub', Rev: 2, Len: 671
-8:909  0:000    17. 6F087B38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
-8:909  0:000    18. 6F08AB40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
-8:909  0:000    19. 6F08AD58: 'DBGP', '', Rev: 1, Len: 52
-8:909  0:000    20. 6F08AD90: 'DBG2', '', Rev: 0, Len: 84
-8:909  0:000    21. 6F08ADE8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
-8:909  0:000    22. 6F090A10: 'MSDM', 'CBX3   ', Rev: 3, Len: 85
-8:909  0:000    23. 6F090A68: 'SLIC', 'CBX3   ', Rev: 3, Len: 374
-8:909  0:000    24. 6F090BE0: 'SSDT', 'SgUlt', Rev: 2, Len: 1053
-8:909  0:000    25. 6F091000: 'SSDT', 'SgPch', Rev: 2, Len: 1874
-8:909  0:000    26. 6F091758: 'DMAR', 'KBL ', Rev: 1, Len: 240
-8:909  0:000    27. 6F091848: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
-8:909  0:000    28. 6F091880: 'SSDT', 'OptTabl', Rev: 1, Len: 7776
-8:909  0:000    29. 6F0936E0: 'BGRT', '', Rev: 0, Len: 56
-8:909  0:000  Found UEFI Acpi 2.0 RSDP at 6F062000
-8:909  0:000  Saving ACPI tables from RSDP 6F062000 to EFI\CLOVER\ACPI\origin ...
-8:909  0:000   6F062000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
-8:926  0:016    (Xsdt: 6F0620C8, Rsdt: 6F062028)
-8:926  0:000    6F0620C8: 'XSDT', 'CBX3   ', Rev: 1, Len: 276 -> XSDT.aml
-8:938  0:012    6F062028: 'RSDT', 'CBX3   ', Rev: 1, Len: 156 -> RSDT.aml
-8:952  0:013    Tables in Xsdt: 30
-8:952  0:000    0. 6F0846F8: 'FACP', 'CBX3   ', Rev: 5, Len: 268 -> FACP.aml
-8:965  0:012        (Dsdt: 6F062270, Facs: 6F9F2F80, XDsdt: 6F062270, XFacs: 0)
-8:965  0:000        6F062270: 'DSDT', 'CBX3   ', Rev: 2, Len: 140418 -> DSDT.aml
-8:981  0:016        6F9F2F80: 'FACS', Ver: 2, Len: 64 -> FACS.aml
-8:994  0:012    1. 6F084808: 'APIC', 'CBX3   ', Rev: 3, Len: 132 -> APIC.aml
-9:006  0:012    2. 6F084890: 'FPDT', 'CBX3   ', Rev: 1, Len: 68 -> FPDT.aml
-9:019  0:013    3. 6F0848D8: 'FIDT', 'CBX3   ', Rev: 1, Len: 156 -> FIDT.aml
-9:031  0:012    4. 6F084978: 'MCFG', 'CBX3   ', Rev: 1, Len: 60 -> MCFG.aml
-9:043  0:012    5. 6F0849B8: 'HPET', 'CBX3   ', Rev: 1, Len: 56 -> HPET.aml
-9:056  0:012    6. 6F0849F0: 'SSDT', 'SataTabl', Rev: 1, Len: 882 -> SSDT-0.aml
-9:069  0:012    7. 6F084D68: 'BOOT', 'CBX3    ', Rev: 1, Len: 40 -> BOOT.aml
-9:082  0:013    8. 6F084D90: 'SSDT', 'SaSsdt ', Rev: 2, Len: 4833 -> SSDT-1.aml
-9:094  0:012    9. 6F086078: 'HPET', 'KBL-ULT', Rev: 1, Len: 56 -> HPET.aml
-9:115  0:020    10. 6F0860B0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716 -> SSDT-2.aml
-9:137  0:022    11. 6F086768: 'UEFI', '', Rev: 1, Len: 66 -> UEFI.aml
-9:150  0:013    12. 6F0867B0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
- Found hidden SSDT 7 pcs
-9:150  0:000        * 6EDA6798: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1782  53 53 44 54 F6 06 00 00 02 AC 50 6D 52 65 66 00 Internal length = 1782 -> SSDT-4x.aml
-9:163  0:013        * 6EDA5718: 'SSDT', 'ApIst', Rev: 2, Len: 1628  53 53 44 54 5C 06 00 00 02 AF 50 6D 52 65 66 00 Internal length = 1628 -> SSDT-5x.aml
-9:175  0:012        * 6EDA4918: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1023  53 53 44 54 FF 03 00 00 02 AF 50 6D 52 65 66 00 Internal length = 1023 -> SSDT-6x.aml
-9:188  0:012        * 6EDA5E18: 'SSDT', 'ApCst', Rev: 2, Len: 394  53 53 44 54 8A 01 00 00 02 39 50 6D 52 65 66 00 Internal length = 394 -> SSDT-7x.aml
-9:200  0:012        * 6D7F3018: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 277  53 53 44 54 15 01 00 00 02 AE 50 6D 52 65 66 00 Internal length = 277 -> SSDT-8x.aml
-9:213  0:013        * 6CD63C18: 'SSDT', 'ApHwp', Rev: 2, Len: 407  53 53 44 54 97 01 00 00 02 F1 50 6D 52 65 66 00 Internal length = 407 -> SSDT-9x.aml
-9:226  0:012        * 6CD63A18: 'SSDT', 'HwpLvt', Rev: 2, Len: 420  53 53 44 54 A4 01 00 00 02 3C 50 6D 52 65 66 00 Internal length = 420 -> SSDT-10x.aml
-9:238  0:012   -> SSDT-3.aml
-9:250  0:012    13. 6F087690: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148 -> LPIT.aml
-9:263  0:013    14. 6F087728: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40 -> WSMT.aml
-9:275  0:012    15. 6F087750: 'SSDT', 'HdaDsp', Rev: 2, Len: 321 -> SSDT-11.aml
-9:294  0:019    16. 6F087898: 'SSDT', 'sensrhub', Rev: 2, Len: 671 -> SSDT-12.aml
-9:307  0:012    17. 6F087B38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290 -> SSDT-13.aml
-9:321  0:013    18. 6F08AB40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533 -> SSDT-14.aml
-9:334  0:013    19. 6F08AD58: 'DBGP', '', Rev: 1, Len: 52 -> DBGP.aml
-9:346  0:012    20. 6F08AD90: 'DBG2', '', Rev: 0, Len: 84 -> DBG2.aml
-9:359  0:012    21. 6F08ADE8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589 -> SSDT-15.aml
-9:371  0:012    22. 6F090A10: 'MSDM', 'CBX3   ', Rev: 3, Len: 85 -> MSDM.aml
-9:383  0:012    23. 6F090A68: 'SLIC', 'CBX3   ', Rev: 3, Len: 374 -> SLIC.aml
-9:396  0:013    24. 6F090BE0: 'SSDT', 'SgUlt', Rev: 2, Len: 1053 -> SSDT-16.aml
-9:409  0:012    25. 6F091000: 'SSDT', 'SgPch', Rev: 2, Len: 1874 -> SSDT-17.aml
-9:421  0:012    26. 6F091758: 'DMAR', 'KBL ', Rev: 1, Len: 240 -> DMAR.aml
-9:433  0:012    27. 6F091848: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52 -> TPM2.aml
-9:445  0:012    28. 6F091880: 'SSDT', 'OptTabl', Rev: 1, Len: 7776 -> SSDT-18.aml
-9:458  0:012    29. 6F0936E0: 'BGRT', '', Rev: 0, Len: 56 -> BGRT.aml
-9:470  0:012    Tables in Rsdt: 30
-9:470  0:000    0. 6F0621E8: 'FACP', 'CBX3   ', Rev: 2, Len: 132 -> RSDT-FACP.aml
-9:482  0:012        (Dsdt: 6F062270, Facs: 6F9F2F40)
-9:482  0:000        6F062270: 'DSDT', 'CBX3   ', Rev: 2, Len: 140418
-9:484  0:001        6F9F2F40: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
-9:496  0:012    1. 6F084808: 'APIC', 'CBX3   ', Rev: 3, Len: 132
-9:496  0:000    2. 6F084890: 'FPDT', 'CBX3   ', Rev: 1, Len: 68
-9:496  0:000    3. 6F0848D8: 'FIDT', 'CBX3   ', Rev: 1, Len: 156
-9:496  0:000    4. 6F084978: 'MCFG', 'CBX3   ', Rev: 1, Len: 60
-9:496  0:000    5. 6F0849B8: 'HPET', 'CBX3   ', Rev: 1, Len: 56
-9:496  0:000    6. 6F0849F0: 'SSDT', 'SataTabl', Rev: 1, Len: 882
-9:496  0:000    7. 6F084D68: 'BOOT', 'CBX3    ', Rev: 1, Len: 40
-9:496  0:000    8. 6F084D90: 'SSDT', 'SaSsdt ', Rev: 2, Len: 4833
-9:496  0:000    9. 6F086078: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
-9:496  0:000    10. 6F0860B0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
-9:496  0:000    11. 6F086768: 'UEFI', '', Rev: 1, Len: 66
-9:496  0:000    12. 6F0867B0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
-9:496  0:000    13. 6F087690: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
-9:496  0:000    14. 6F087728: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
-9:496  0:000    15. 6F087750: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
-9:496  0:000    16. 6F087898: 'SSDT', 'sensrhub', Rev: 2, Len: 671
-9:496  0:000    17. 6F087B38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
-9:496  0:000    18. 6F08AB40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
-9:496  0:000    19. 6F08AD58: 'DBGP', '', Rev: 1, Len: 52
-9:496  0:000    20. 6F08AD90: 'DBG2', '', Rev: 0, Len: 84
-9:496  0:000    21. 6F08ADE8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
-9:496  0:000    22. 6F090A10: 'MSDM', 'CBX3   ', Rev: 3, Len: 85
-9:496  0:000    23. 6F090A68: 'SLIC', 'CBX3   ', Rev: 3, Len: 374
-9:496  0:000    24. 6F090BE0: 'SSDT', 'SgUlt', Rev: 2, Len: 1053
-9:496  0:000    25. 6F091000: 'SSDT', 'SgPch', Rev: 2, Len: 1874
-9:496  0:000    26. 6F091758: 'DMAR', 'KBL ', Rev: 1, Len: 240
-9:496  0:000    27. 6F091848: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
-9:496  0:000    28. 6F091880: 'SSDT', 'OptTabl', Rev: 1, Len: 7776
-9:496  0:000    29. 6F0936E0: 'BGRT', '', Rev: 0, Len: 56
-9:496  0:000  Found UEFI Acpi 1.0 RSDP at 6F062000
-9:496  0:000  Printing ACPI tables from RSDP 6F062000 ...
-9:496  0:000   6F062000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
-9:496  0:000    (Xsdt: 6F0620C8, Rsdt: 6F062028)
-9:496  0:000    6F0620C8: 'XSDT', 'CBX3   ', Rev: 1, Len: 276
-9:496  0:000    6F062028: 'RSDT', 'CBX3   ', Rev: 1, Len: 156
-9:496  0:000    Tables in Xsdt: 30
-9:496  0:000    0. 6F0846F8: 'FACP', 'CBX3   ', Rev: 5, Len: 268
-9:496  0:000        (Dsdt: 6F062270, Facs: 6F9F2F80, XDsdt: 6F062270, XFacs: 0)
-9:496  0:000        6F062270: 'DSDT', 'CBX3   ', Rev: 2, Len: 140418
-9:498  0:001        6F9F2F80: 'FACS', Ver: 2, Len: 64
-9:498  0:000    1. 6F084808: 'APIC', 'CBX3   ', Rev: 3, Len: 132
-9:498  0:000    2. 6F084890: 'FPDT', 'CBX3   ', Rev: 1, Len: 68
-9:498  0:000    3. 6F0848D8: 'FIDT', 'CBX3   ', Rev: 1, Len: 156
-9:498  0:000    4. 6F084978: 'MCFG', 'CBX3   ', Rev: 1, Len: 60
-9:498  0:000    5. 6F0849B8: 'HPET', 'CBX3   ', Rev: 1, Len: 56
-9:498  0:000    6. 6F0849F0: 'SSDT', 'SataTabl', Rev: 1, Len: 882
-9:498  0:000    7. 6F084D68: 'BOOT', 'CBX3    ', Rev: 1, Len: 40
-9:498  0:000    8. 6F084D90: 'SSDT', 'SaSsdt ', Rev: 2, Len: 4833
-9:498  0:000    9. 6F086078: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
-9:498  0:000    10. 6F0860B0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
-9:498  0:000    11. 6F086768: 'UEFI', '', Rev: 1, Len: 66
-9:498  0:000    12. 6F0867B0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
-9:498  0:000    13. 6F087690: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
-9:498  0:000    14. 6F087728: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
-9:498  0:000    15. 6F087750: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
-9:498  0:000    16. 6F087898: 'SSDT', 'sensrhub', Rev: 2, Len: 671
-9:498  0:000    17. 6F087B38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
-9:498  0:000    18. 6F08AB40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
-9:498  0:000    19. 6F08AD58: 'DBGP', '', Rev: 1, Len: 52
-9:498  0:000    20. 6F08AD90: 'DBG2', '', Rev: 0, Len: 84
-9:498  0:000    21. 6F08ADE8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
-9:498  0:000    22. 6F090A10: 'MSDM', 'CBX3   ', Rev: 3, Len: 85
-9:498  0:000    23. 6F090A68: 'SLIC', 'CBX3   ', Rev: 3, Len: 374
-9:498  0:000    24. 6F090BE0: 'SSDT', 'SgUlt', Rev: 2, Len: 1053
-9:498  0:000    25. 6F091000: 'SSDT', 'SgPch', Rev: 2, Len: 1874
-9:498  0:000    26. 6F091758: 'DMAR', 'KBL ', Rev: 1, Len: 240
-9:498  0:000    27. 6F091848: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
-9:498  0:000    28. 6F091880: 'SSDT', 'OptTabl', Rev: 1, Len: 7776
-9:498  0:000    29. 6F0936E0: 'BGRT', '', Rev: 0, Len: 56
-9:498  0:000    Tables in Rsdt: 30
-9:498  0:000    0. 6F0621E8: 'FACP', 'CBX3   ', Rev: 2, Len: 132
-9:498  0:000        (Dsdt: 6F062270, Facs: 6F9F2F40)
-9:498  0:000        6F062270: 'DSDT', 'CBX3   ', Rev: 2, Len: 140418
-9:500  0:001        6F9F2F40: 'FACS', Ver: 0, Len: 64
-9:500  0:000    1. 6F084808: 'APIC', 'CBX3   ', Rev: 3, Len: 132
-9:500  0:000    2. 6F084890: 'FPDT', 'CBX3   ', Rev: 1, Len: 68
-9:500  0:000    3. 6F0848D8: 'FIDT', 'CBX3   ', Rev: 1, Len: 156
-9:500  0:000    4. 6F084978: 'MCFG', 'CBX3   ', Rev: 1, Len: 60
-9:500  0:000    5. 6F0849B8: 'HPET', 'CBX3   ', Rev: 1, Len: 56
-9:500  0:000    6. 6F0849F0: 'SSDT', 'SataTabl', Rev: 1, Len: 882
-9:500  0:000    7. 6F084D68: 'BOOT', 'CBX3    ', Rev: 1, Len: 40
-9:500  0:000    8. 6F084D90: 'SSDT', 'SaSsdt ', Rev: 2, Len: 4833
-9:500  0:000    9. 6F086078: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
-9:500  0:000    10. 6F0860B0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
-9:500  0:000    11. 6F086768: 'UEFI', '', Rev: 1, Len: 66
-9:500  0:000    12. 6F0867B0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
-9:500  0:000    13. 6F087690: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
-9:500  0:000    14. 6F087728: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
-9:500  0:000    15. 6F087750: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
-9:500  0:000    16. 6F087898: 'SSDT', 'sensrhub', Rev: 2, Len: 671
-9:500  0:000    17. 6F087B38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
-9:500  0:000    18. 6F08AB40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
-9:500  0:000    19. 6F08AD58: 'DBGP', '', Rev: 1, Len: 52
-9:500  0:000    20. 6F08AD90: 'DBG2', '', Rev: 0, Len: 84
-9:500  0:000    21. 6F08ADE8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
-9:500  0:000    22. 6F090A10: 'MSDM', 'CBX3   ', Rev: 3, Len: 85
-9:500  0:000    23. 6F090A68: 'SLIC', 'CBX3   ', Rev: 3, Len: 374
-9:500  0:000    24. 6F090BE0: 'SSDT', 'SgUlt', Rev: 2, Len: 1053
-9:500  0:000    25. 6F091000: 'SSDT', 'SgPch', Rev: 2, Len: 1874
-9:500  0:000    26. 6F091758: 'DMAR', 'KBL ', Rev: 1, Len: 240
-9:500  0:000    27. 6F091848: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
-9:500  0:000    28. 6F091880: 'SSDT', 'OptTabl', Rev: 1, Len: 7776
-9:500  0:000    29. 6F0936E0: 'BGRT', '', Rev: 0, Len: 56
+7:685  0:898  Found BIOS RSDP at EB510
+7:685  0:000  Printing ACPI tables from RSDP EB510 ...
+7:685  0:000   EB510: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+7:685  0:000    (Xsdt: 6F0620C8, Rsdt: 6F062028)
+7:685  0:000    6F0620C8: 'XSDT', 'CBX3', Rev: 1, Len: 276
+7:685  0:000    6F062028: 'RSDT', 'CBX3', Rev: 1, Len: 156
+7:685  0:000    Tables in Xsdt: 30
+7:685  0:000    0. 6F0846F8: 'FACP', 'CBX3', Rev: 5, Len: 268
+7:685  0:000        (Dsdt: 6F062270, Facs: 6F9F2F80, XDsdt: 6F062270, XFacs: 0)
+7:685  0:000        6F062270: 'DSDT', 'CBX3', Rev: 2, Len: 140418
+7:687  0:001        6F9F2F80: 'FACS', Ver: 2, Len: 64
+7:687  0:000    1. 6F084808: 'APIC', 'CBX3', Rev: 3, Len: 132
+7:687  0:000    2. 6F084890: 'FPDT', 'CBX3', Rev: 1, Len: 68
+7:687  0:000    3. 6F0848D8: 'FIDT', 'CBX3', Rev: 1, Len: 156
+7:687  0:000    4. 6F084978: 'MCFG', 'CBX3', Rev: 1, Len: 60
+7:687  0:000    5. 6F0849B8: 'HPET', 'CBX3', Rev: 1, Len: 56
+7:687  0:000    6. 6F0849F0: 'SSDT', 'SataTabl', Rev: 1, Len: 882
+7:687  0:000    7. 6F084D68: 'BOOT', 'CBX3', Rev: 1, Len: 40
+7:687  0:000    8. 6F084D90: 'SSDT', 'SaSsdt', Rev: 2, Len: 4833
+7:687  0:000    9. 6F086078: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+7:687  0:000    10. 6F0860B0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
+7:687  0:000    11. 6F086768: 'UEFI', '', Rev: 1, Len: 66
+7:687  0:000    12. 6F0867B0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+7:687  0:000    13. 6F087690: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+7:687  0:000    14. 6F087728: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
+7:687  0:000    15. 6F087750: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:687  0:000    16. 6F087898: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+7:687  0:000    17. 6F087B38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+7:687  0:000    18. 6F08AB40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
+7:687  0:000    19. 6F08AD58: 'DBGP', '', Rev: 1, Len: 52
+7:687  0:000    20. 6F08AD90: 'DBG2', '', Rev: 0, Len: 84
+7:687  0:000    21. 6F08ADE8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
+7:687  0:000    22. 6F090A10: 'MSDM', 'CBX3', Rev: 3, Len: 85
+7:687  0:000    23. 6F090A68: 'SLIC', 'CBX3', Rev: 3, Len: 374
+7:687  0:000    24. 6F090BE0: 'SSDT', 'SgUlt', Rev: 2, Len: 1053
+7:687  0:000    25. 6F091000: 'SSDT', 'SgPch', Rev: 2, Len: 1874
+7:687  0:000    26. 6F091758: 'DMAR', 'KBL', Rev: 1, Len: 240
+7:687  0:000    27. 6F091848: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
+7:687  0:000    28. 6F091880: 'SSDT', 'OptTabl', Rev: 1, Len: 7776
+7:687  0:000    29. 6F0936E0: 'BGRT', '', Rev: 0, Len: 56
+7:687  0:000    Tables in Rsdt: 30
+7:687  0:000    0. 6F0621E8: 'FACP', 'CBX3', Rev: 2, Len: 132
+7:687  0:000        (Dsdt: 6F062270, Facs: 6F9F2F40)
+7:687  0:000        6F062270: 'DSDT', 'CBX3', Rev: 2, Len: 140418
+7:689  0:001        6F9F2F40: 'FACS', Ver: 0, Len: 64
+7:689  0:000    1. 6F084808: 'APIC', 'CBX3', Rev: 3, Len: 132
+7:689  0:000    2. 6F084890: 'FPDT', 'CBX3', Rev: 1, Len: 68
+7:689  0:000    3. 6F0848D8: 'FIDT', 'CBX3', Rev: 1, Len: 156
+7:689  0:000    4. 6F084978: 'MCFG', 'CBX3', Rev: 1, Len: 60
+7:689  0:000    5. 6F0849B8: 'HPET', 'CBX3', Rev: 1, Len: 56
+7:689  0:000    6. 6F0849F0: 'SSDT', 'SataTabl', Rev: 1, Len: 882
+7:689  0:000    7. 6F084D68: 'BOOT', 'CBX3', Rev: 1, Len: 40
+7:689  0:000    8. 6F084D90: 'SSDT', 'SaSsdt', Rev: 2, Len: 4833
+7:689  0:000    9. 6F086078: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+7:689  0:000    10. 6F0860B0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
+7:689  0:000    11. 6F086768: 'UEFI', '', Rev: 1, Len: 66
+7:689  0:000    12. 6F0867B0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+7:689  0:000    13. 6F087690: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+7:689  0:000    14. 6F087728: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
+7:689  0:000    15. 6F087750: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:689  0:000    16. 6F087898: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+7:689  0:000    17. 6F087B38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+7:689  0:000    18. 6F08AB40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
+7:689  0:000    19. 6F08AD58: 'DBGP', '', Rev: 1, Len: 52
+7:689  0:000    20. 6F08AD90: 'DBG2', '', Rev: 0, Len: 84
+7:689  0:000    21. 6F08ADE8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
+7:689  0:000    22. 6F090A10: 'MSDM', 'CBX3', Rev: 3, Len: 85
+7:689  0:000    23. 6F090A68: 'SLIC', 'CBX3', Rev: 3, Len: 374
+7:689  0:000    24. 6F090BE0: 'SSDT', 'SgUlt', Rev: 2, Len: 1053
+7:689  0:000    25. 6F091000: 'SSDT', 'SgPch', Rev: 2, Len: 1874
+7:689  0:000    26. 6F091758: 'DMAR', 'KBL', Rev: 1, Len: 240
+7:689  0:000    27. 6F091848: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
+7:689  0:000    28. 6F091880: 'SSDT', 'OptTabl', Rev: 1, Len: 7776
+7:689  0:000    29. 6F0936E0: 'BGRT', '', Rev: 0, Len: 56
+7:689  0:000  Found UEFI Acpi 2.0 RSDP at 6F062000
+7:689  0:000  Saving ACPI tables from RSDP 6F062000 to EFI\CLOVER\ACPI\origin ...
+7:689  0:000   6F062000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+7:689  0:000    (Xsdt: 6F0620C8, Rsdt: 6F062028)
+7:689  0:000    6F0620C8: 'XSDT', 'CBX3', Rev: 1, Len: 276
+7:689  0:000    6F062028: 'RSDT', 'CBX3', Rev: 1, Len: 156
+7:689  0:000    Tables in Xsdt: 30
+7:689  0:000    0. 6F0846F8: 'FACP', 'CBX3', Rev: 5, Len: 268
+7:689  0:000        (Dsdt: 6F062270, Facs: 6F9F2F80, XDsdt: 6F062270, XFacs: 0)
+7:689  0:000        6F062270: 'DSDT', 'CBX3', Rev: 2, Len: 140418
+7:691  0:001        6F9F2F80: 'FACS', Ver: 2, Len: 64
+7:691  0:000    1. 6F084808: 'APIC', 'CBX3', Rev: 3, Len: 132
+7:691  0:000    2. 6F084890: 'FPDT', 'CBX3', Rev: 1, Len: 68
+7:691  0:000    3. 6F0848D8: 'FIDT', 'CBX3', Rev: 1, Len: 156
+7:691  0:000    4. 6F084978: 'MCFG', 'CBX3', Rev: 1, Len: 60
+7:691  0:000    5. 6F0849B8: 'HPET', 'CBX3', Rev: 1, Len: 56
+7:691  0:000    6. 6F0849F0: 'SSDT', 'SataTabl', Rev: 1, Len: 882
+7:691  0:000    7. 6F084D68: 'BOOT', 'CBX3', Rev: 1, Len: 40
+7:691  0:000    8. 6F084D90: 'SSDT', 'SaSsdt', Rev: 2, Len: 4833
+7:691  0:000    9. 6F086078: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+7:691  0:000    10. 6F0860B0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
+7:691  0:000    11. 6F086768: 'UEFI', '', Rev: 1, Len: 66
+7:691  0:000    12. 6F0867B0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+7:691  0:000    13. 6F087690: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+7:691  0:000    14. 6F087728: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
+7:691  0:000    15. 6F087750: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:691  0:000    16. 6F087898: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+7:691  0:000    17. 6F087B38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+7:691  0:000    18. 6F08AB40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
+7:691  0:000    19. 6F08AD58: 'DBGP', '', Rev: 1, Len: 52
+7:691  0:000    20. 6F08AD90: 'DBG2', '', Rev: 0, Len: 84
+7:691  0:000    21. 6F08ADE8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
+7:691  0:000    22. 6F090A10: 'MSDM', 'CBX3', Rev: 3, Len: 85
+7:691  0:000    23. 6F090A68: 'SLIC', 'CBX3', Rev: 3, Len: 374
+7:691  0:000    24. 6F090BE0: 'SSDT', 'SgUlt', Rev: 2, Len: 1053
+7:691  0:000    25. 6F091000: 'SSDT', 'SgPch', Rev: 2, Len: 1874
+7:691  0:000    26. 6F091758: 'DMAR', 'KBL', Rev: 1, Len: 240
+7:691  0:000    27. 6F091848: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
+7:691  0:000    28. 6F091880: 'SSDT', 'OptTabl', Rev: 1, Len: 7776
+7:691  0:000    29. 6F0936E0: 'BGRT', '', Rev: 0, Len: 56
+7:691  0:000    Tables in Rsdt: 30
+7:691  0:000    0. 6F0621E8: 'FACP', 'CBX3', Rev: 2, Len: 132
+7:691  0:000        (Dsdt: 6F062270, Facs: 6F9F2F40)
+7:691  0:000        6F062270: 'DSDT', 'CBX3', Rev: 2, Len: 140418
+7:692  0:001        6F9F2F40: 'FACS', Ver: 0, Len: 64
+7:692  0:000    1. 6F084808: 'APIC', 'CBX3', Rev: 3, Len: 132
+7:692  0:000    2. 6F084890: 'FPDT', 'CBX3', Rev: 1, Len: 68
+7:692  0:000    3. 6F0848D8: 'FIDT', 'CBX3', Rev: 1, Len: 156
+7:692  0:000    4. 6F084978: 'MCFG', 'CBX3', Rev: 1, Len: 60
+7:692  0:000    5. 6F0849B8: 'HPET', 'CBX3', Rev: 1, Len: 56
+7:692  0:000    6. 6F0849F0: 'SSDT', 'SataTabl', Rev: 1, Len: 882
+7:692  0:000    7. 6F084D68: 'BOOT', 'CBX3', Rev: 1, Len: 40
+7:692  0:000    8. 6F084D90: 'SSDT', 'SaSsdt', Rev: 2, Len: 4833
+7:692  0:000    9. 6F086078: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+7:692  0:000    10. 6F0860B0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
+7:692  0:000    11. 6F086768: 'UEFI', '', Rev: 1, Len: 66
+7:692  0:000    12. 6F0867B0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+7:692  0:000    13. 6F087690: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+7:692  0:000    14. 6F087728: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
+7:692  0:000    15. 6F087750: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:692  0:000    16. 6F087898: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+7:692  0:000    17. 6F087B38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+7:692  0:000    18. 6F08AB40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
+7:692  0:000    19. 6F08AD58: 'DBGP', '', Rev: 1, Len: 52
+7:692  0:000    20. 6F08AD90: 'DBG2', '', Rev: 0, Len: 84
+7:692  0:000    21. 6F08ADE8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
+7:692  0:000    22. 6F090A10: 'MSDM', 'CBX3', Rev: 3, Len: 85
+7:692  0:000    23. 6F090A68: 'SLIC', 'CBX3', Rev: 3, Len: 374
+7:692  0:000    24. 6F090BE0: 'SSDT', 'SgUlt', Rev: 2, Len: 1053
+7:692  0:000    25. 6F091000: 'SSDT', 'SgPch', Rev: 2, Len: 1874
+7:692  0:000    26. 6F091758: 'DMAR', 'KBL', Rev: 1, Len: 240
+7:692  0:000    27. 6F091848: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
+7:692  0:000    28. 6F091880: 'SSDT', 'OptTabl', Rev: 1, Len: 7776
+7:692  0:000    29. 6F0936E0: 'BGRT', '', Rev: 0, Len: 56
+7:692  0:000  Found UEFI Acpi 1.0 RSDP at 6F062000
+7:692  0:000  Printing ACPI tables from RSDP 6F062000 ...
+7:692  0:000   6F062000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+7:692  0:000    (Xsdt: 6F0620C8, Rsdt: 6F062028)
+7:692  0:000    6F0620C8: 'XSDT', 'CBX3', Rev: 1, Len: 276
+7:692  0:000    6F062028: 'RSDT', 'CBX3', Rev: 1, Len: 156
+7:692  0:000    Tables in Xsdt: 30
+7:692  0:000    0. 6F0846F8: 'FACP', 'CBX3', Rev: 5, Len: 268
+7:692  0:000        (Dsdt: 6F062270, Facs: 6F9F2F80, XDsdt: 6F062270, XFacs: 0)
+7:692  0:000        6F062270: 'DSDT', 'CBX3', Rev: 2, Len: 140418
+7:694  0:001        6F9F2F80: 'FACS', Ver: 2, Len: 64
+7:694  0:000    1. 6F084808: 'APIC', 'CBX3', Rev: 3, Len: 132
+7:694  0:000    2. 6F084890: 'FPDT', 'CBX3', Rev: 1, Len: 68
+7:694  0:000    3. 6F0848D8: 'FIDT', 'CBX3', Rev: 1, Len: 156
+7:694  0:000    4. 6F084978: 'MCFG', 'CBX3', Rev: 1, Len: 60
+7:694  0:000    5. 6F0849B8: 'HPET', 'CBX3', Rev: 1, Len: 56
+7:694  0:000    6. 6F0849F0: 'SSDT', 'SataTabl', Rev: 1, Len: 882
+7:694  0:000    7. 6F084D68: 'BOOT', 'CBX3', Rev: 1, Len: 40
+7:694  0:000    8. 6F084D90: 'SSDT', 'SaSsdt', Rev: 2, Len: 4833
+7:694  0:000    9. 6F086078: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+7:694  0:000    10. 6F0860B0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
+7:694  0:000    11. 6F086768: 'UEFI', '', Rev: 1, Len: 66
+7:694  0:000    12. 6F0867B0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+7:694  0:000    13. 6F087690: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+7:694  0:000    14. 6F087728: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
+7:694  0:000    15. 6F087750: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:694  0:000    16. 6F087898: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+7:694  0:000    17. 6F087B38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+7:694  0:000    18. 6F08AB40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
+7:694  0:000    19. 6F08AD58: 'DBGP', '', Rev: 1, Len: 52
+7:694  0:000    20. 6F08AD90: 'DBG2', '', Rev: 0, Len: 84
+7:694  0:000    21. 6F08ADE8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
+7:694  0:000    22. 6F090A10: 'MSDM', 'CBX3', Rev: 3, Len: 85
+7:694  0:000    23. 6F090A68: 'SLIC', 'CBX3', Rev: 3, Len: 374
+7:694  0:000    24. 6F090BE0: 'SSDT', 'SgUlt', Rev: 2, Len: 1053
+7:694  0:000    25. 6F091000: 'SSDT', 'SgPch', Rev: 2, Len: 1874
+7:694  0:000    26. 6F091758: 'DMAR', 'KBL', Rev: 1, Len: 240
+7:694  0:000    27. 6F091848: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
+7:694  0:000    28. 6F091880: 'SSDT', 'OptTabl', Rev: 1, Len: 7776
+7:694  0:000    29. 6F0936E0: 'BGRT', '', Rev: 0, Len: 56
+7:694  0:000    Tables in Rsdt: 30
+7:694  0:000    0. 6F0621E8: 'FACP', 'CBX3', Rev: 2, Len: 132
+7:694  0:000        (Dsdt: 6F062270, Facs: 6F9F2F40)
+7:694  0:000        6F062270: 'DSDT', 'CBX3', Rev: 2, Len: 140418
+7:696  0:001        6F9F2F40: 'FACS', Ver: 0, Len: 64
+7:696  0:000    1. 6F084808: 'APIC', 'CBX3', Rev: 3, Len: 132
+7:696  0:000    2. 6F084890: 'FPDT', 'CBX3', Rev: 1, Len: 68
+7:696  0:000    3. 6F0848D8: 'FIDT', 'CBX3', Rev: 1, Len: 156
+7:696  0:000    4. 6F084978: 'MCFG', 'CBX3', Rev: 1, Len: 60
+7:696  0:000    5. 6F0849B8: 'HPET', 'CBX3', Rev: 1, Len: 56
+7:696  0:000    6. 6F0849F0: 'SSDT', 'SataTabl', Rev: 1, Len: 882
+7:696  0:000    7. 6F084D68: 'BOOT', 'CBX3', Rev: 1, Len: 40
+7:696  0:000    8. 6F084D90: 'SSDT', 'SaSsdt', Rev: 2, Len: 4833
+7:696  0:000    9. 6F086078: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+7:696  0:000    10. 6F0860B0: 'SSDT', 'xh_OEMBD', Rev: 2, Len: 1716
+7:696  0:000    11. 6F086768: 'UEFI', '', Rev: 1, Len: 66
+7:696  0:000    12. 6F0867B0: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+7:696  0:000    13. 6F087690: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+7:696  0:000    14. 6F087728: 'WSMT', 'KBL-ULT', Rev: 1, Len: 40
+7:696  0:000    15. 6F087750: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:696  0:000    16. 6F087898: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+7:696  0:000    17. 6F087B38: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+7:696  0:000    18. 6F08AB40: 'SSDT', 'TbtTypeC', Rev: 2, Len: 533
+7:696  0:000    19. 6F08AD58: 'DBGP', '', Rev: 1, Len: 52
+7:696  0:000    20. 6F08AD90: 'DBG2', '', Rev: 0, Len: 84
+7:696  0:000    21. 6F08ADE8: 'SSDT', 'DptfTabl', Rev: 2, Len: 23589
+7:696  0:000    22. 6F090A10: 'MSDM', 'CBX3', Rev: 3, Len: 85
+7:696  0:000    23. 6F090A68: 'SLIC', 'CBX3', Rev: 3, Len: 374
+7:696  0:000    24. 6F090BE0: 'SSDT', 'SgUlt', Rev: 2, Len: 1053
+7:696  0:000    25. 6F091000: 'SSDT', 'SgPch', Rev: 2, Len: 1874
+7:696  0:000    26. 6F091758: 'DMAR', 'KBL', Rev: 1, Len: 240
+7:696  0:000    27. 6F091848: 'TPM2', 'Tpm2Tabl', Rev: 3, Len: 52
+7:696  0:000    28. 6F091880: 'SSDT', 'OptTabl', Rev: 1, Len: 7776
+7:696  0:000    29. 6F0936E0: 'BGRT', '', Rev: 0, Len: 56
