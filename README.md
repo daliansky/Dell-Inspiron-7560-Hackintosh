@@ -8,7 +8,7 @@
 * 声卡为ALC256(ALC3246)，使用 `AppleALC` 仿冒，layout-id:56，注入信息位于 `/CLOVER/ACPI/patched/SSDT-Config.aml`
 * 无线网卡更换为bcm94352z，驱动信息位于 `FakeSMC` 
 * 其它 `ACPI` 补丁修复采用 `hotpatch` 方式，文件位于 `/CLOVER/ACPI/patched`
-![screenshot18](http://ous2s14vo.bkt.clouddn.com/screenshot18.png)
+![screenshot18](http://7.daliansky.net/screenshot18.png)
 * 清理了下Drivers64UEFI目录，只保留需要的驱动程序，apfs.efi为不加载log版本。
 ![Clover](http://7.daliansky.net/dell/Clover.jpg)
 
@@ -21,7 +21,7 @@
 
 ## HIDPI **感谢 @[冰水加劲Q](https://github.com/xzhih)**
 进入 `一键开启HIDPI并注入EDID` 目录，点击 `双击.command` 命令执行后以实现下面的效果：
-![hidpi](http://ous2s14vo.bkt.clouddn.com/hidpi.png)
+![hidpi](http://7.daliansky.net/hidpi.png)
 
 ## refind
 另一个BootLoader
@@ -82,7 +82,7 @@
 ## 如果你认可我的工作，可以通过 `打赏` 支持我后续的更新
 |微信|支付宝|
 | --- | --- |
-|![wechatpay_160](http://ous2s14vo.bkt.clouddn.com/wechatpay_160.jpg)|![alipay_160](http://ous2s14vo.bkt.clouddn.com/alipay_160.jpg)|
+|![wechatpay_160](http://7.daliansky.net/wechatpay_160.jpg)|![alipay_160](http://7.daliansky.net/alipay_160.jpg)|
 
 
 ## QQ群:
