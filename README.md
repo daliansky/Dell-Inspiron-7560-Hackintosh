@@ -76,8 +76,21 @@
         * Lilu v1.2.3
         * Shiki v2.2.3
         * AirportBrcmFixup v1.1.1
+* 4-8-2018
 
-    ​
+    * Clover常规更新
+
+        * Clover_v2.4k_r4429 更新支持macOS 10.13.4
+        * Apfs.efi常规更新到10.13.5DB1
+
+    * 驱动更新
+
+      * InterGraphicsFixup v1.2.7
+      * AppleALC v1.2.5
+      * Shiki v2.2.6
+      * AirportBrcmFixup v1.1.2
+
+      ​
 
 ## 如果你认可我的工作，可以通过 `打赏` 支持我后续的更新
 |微信|支付宝|
