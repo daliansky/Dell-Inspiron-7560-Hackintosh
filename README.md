@@ -76,7 +76,7 @@
         * Lilu v1.2.3
         * Shiki v2.2.3
         * AirportBrcmFixup v1.1.1
-* 4-8-2018
+* 4-9-2018
 
     * Clover常规更新
 
@@ -86,7 +86,7 @@
     * 驱动更新
 
       * InterGraphicsFixup v1.2.7
-      * AppleALC v1.2.5
+      * AppleALC v1.2.6
       * Shiki v2.2.6
       * AirportBrcmFixup v1.1.2
 
