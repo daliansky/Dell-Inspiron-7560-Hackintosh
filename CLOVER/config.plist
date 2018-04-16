@@ -14,8 +14,6 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>FixHeaders</key>
-				<true/>
 				<key>FixRegions</key>
 				<true/>
 			</dict>
@@ -133,6 +131,20 @@
 					U0FUQQ==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>PRW 6D03 TO 6D00</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					Cm0KAw==
+					</data>
+					<key>Replace</key>
+					<data>
+					Cm0KAA==
+					</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -144,6 +156,8 @@
 				<string>DMAR</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<true/>
 		<key>ResetAddress</key>
 		<string>0xB2</string>
 		<key>ResetValue</key>
@@ -166,11 +180,13 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>darkwake=8 -disablegfxfirmware</string>
+		<string>darkwake=8</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
 		<string>MAC</string>
+		<key>NoEarlyProgress</key>
+		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
@@ -264,8 +280,6 @@
 		</dict>
 		<key>NvidiaSingle</key>
 		<false/>
-		<key>ig-platform-id</key>
-		<string>0x59160000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -500,6 +514,26 @@
 				<key>Replace</key>
 				<data>
 				g32UFA+DlwQ=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.13.x USB Port Limit Patch</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g32UDw+DlwQAAA==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.13.4,10.13.5</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g32UGpCQkJCQkA==
 				</data>
 			</dict>
 		</array>
