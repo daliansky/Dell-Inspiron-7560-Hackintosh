@@ -92,6 +92,12 @@
         * Lilu v1.2.5
         * AppleALC v1.3.0
         * WhateverGreen v1.2.0
+* 8-4-2018
+    * CLOVER常规更新，使用新的显卡驱动方式，更好地支持10.13/10.14
+    * 驱动更新
+        - Lilu v1.2.6
+        - AppleALC v1.3.1
+        - WhateverGreen v1.2.1
 
 
 
