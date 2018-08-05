@@ -365,6 +365,8 @@
 				<data>
 				sABMi1Xw
 				</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
 				<key>Replace</key>
 				<data>
 				SIPEQF3D
@@ -379,6 +381,8 @@
 				<data>
 				igKEwHRE
 				</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
 				<key>Replace</key>
 				<data>
 				igKEwOtE
@@ -396,6 +400,22 @@
 				<key>Replace</key>
 				<data>
 				ILniAAAAkJA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable panic kext logging on 10.14 Release kernel (c) vit9696</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				igKEwHRC
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Replace</key>
+				<data>
+				igKEwOtC
 				</data>
 			</dict>
 		</array>
@@ -549,9 +569,11 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>Mobile</key>
-		<true/>
+		<false/>
 		<key>ProductName</key>
 		<string>MacBookPro15,2</string>
+		<key>Trust</key>
+		<true/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
