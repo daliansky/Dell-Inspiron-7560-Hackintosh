@@ -99,6 +99,9 @@
         - Lilu v1.2.6
         - AppleALC v1.3.1
         - WhateverGreen v1.2.1
+* 8-6-2018
+    * Clover添加Disable minStolenSize less or equal fStolenMemorySize assertion，解决卡DVMT；另一种方法请移步：[通过修改DVMT Pre-Allocated解决AppleIntelKBLGraphicsFramebuffer问题](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1730172&page=1#pid46869870)
+    * SMBIOS设置为MacBookPro15,2，不喜可修改为MacBookPro14,1
 
 
 
