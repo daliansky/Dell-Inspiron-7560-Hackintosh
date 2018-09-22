@@ -106,6 +106,15 @@
     * 增加Brcm94352z/DW1560注入信息，解决10.13.6(17G2112/17G2208)/10.14蓝牙失效问题
 * 8-11-2018
     * 加入了I2C触摸板的支持，开启更多手势
+* 9-22-2018
+    * 使用`FB Patcher`生成USBPower.kext，弃用`USBInjectAll.kext`和`SSDT-UIAC-ALL.aml`
+    * `VoodooI2C`更新到v2.0.1特别版，触摸板支持更多手势，支持双指捏合缩放，支持`Mojave`和`HighSierra`
+    * 声卡id注入:2，以解决部分机型无法驱动的问题
+    * 驱动常规更新
+        * Lilu v1.2.7
+        * WhatEverGreen v1.2.3
+        * AppleALC v1.3.2
+    * 修改主题文件，适配`Mojave`
 
 
 

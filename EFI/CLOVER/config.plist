@@ -203,17 +203,15 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>AFGLowPowerState</key>
-			<true/>
-			<key>Inject</key>
-			<integer>56</integer>
-			<key>ResetHDA</key>
-			<true/>
-		</dict>
 		<key>Properties</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<data>
+				AgAAAA==
+				</data>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
@@ -228,6 +226,10 @@
 				<data>
 				AQAAAA==
 				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
 				<key>framebuffer-con1-enable</key>
 				<data>
 				AQAAAA==
@@ -236,17 +238,45 @@
 				<data>
 				AAgAAA==
 				</data>
+				<key>framebuffer-con2-busid</key>
+				<data>
+				AAAAAA==
+				</data>
 				<key>framebuffer-con2-enable</key>
 				<data>
 				AQAAAA==
+				</data>
+				<key>framebuffer-con2-flags</key>
+				<data>
+				AAAAAA==
 				</data>
 				<key>framebuffer-con2-index</key>
 				<data>
 				/////w==
 				</data>
+				<key>framebuffer-con2-pipe</key>
+				<data>
+				AAAAAA==
+				</data>
+				<key>framebuffer-con2-type</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con3-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con3-flags</key>
+				<data>
+				AAAAAA==
+				</data>
 				<key>framebuffer-fbmem</key>
 				<data>
 				AACQAA==
+				</data>
+				<key>framebuffer-memorycount</key>
+				<data>
+				AgAAAA==
 				</data>
 				<key>framebuffer-patch-enable</key>
 				<data>
@@ -266,8 +296,10 @@
 				</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>
-				AAAAgA==
+				AAAAwA==
 				</data>
+				<key>model</key>
+				<string>Intel Iris Plus Graphics 655</string>
 			</dict>
 		</dict>
 		<key>USB</key>
@@ -317,7 +349,7 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>Hackintosh_ID</string>
+		<string>random</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -348,6 +380,10 @@
 		<false/>
 		<key>DellSMBIOSPatch</key>
 		<true/>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
+		</array>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelLapic</key>
@@ -425,80 +461,38 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>1536MB-&gt;2048MB</string>
+				<string>Disable AppleIntelLpssI2C (credit by Coolstar)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				AAAAYGwFAABsBQAAAAAAAA==
+				SU9LaXQ=
 				</data>
 				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
+				<true/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
+				<string>AppleIntelLpssI2C</string>
 				<key>Replace</key>
 				<data>
-				AAAAgGwFAABsBQAAAAAAAA==
+				SU9LaXM=
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>eDP,0x59160000 credit syscl</string>
+				<string>Disable AppleIntelLpssI2CCOntroller (credit by Coolstar)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				AAAIAAIAAACYAAAA
+				SU9LaXQ=
 				</data>
 				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
+				<true/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
+				<string>AppleIntelLpssI2CController</string>
 				<key>Replace</key>
 				<data>
-				AAAIAAAEAACYAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>0x59160000/etc, 19MB framebuffer 9MB cursor bytes (credit RehabMan)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AAAgAgAAAAA=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AAAwAQAAkAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audio补丁,端口0105,0x59160000</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AQUJAAAEAACHAQAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x,10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQUJAAAIAACHAQAA
+				SU9LaXM=
 				</data>
 			</dict>
 			<dict>
@@ -589,12 +583,32 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.14.x</string>
+				<string>10.14.Beta3</string>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				60ZI/wUCUgg=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.14 (credit DalianSky)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dkZI/wX8awg=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14,10.14.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				60ZI/wX8awg=
 				</data>
 			</dict>
 		</array>
@@ -608,17 +622,53 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>BiosReleaseDate</key>
+		<string>06/26/2018</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
+		<key>BiosVersion</key>
+		<string>MBP152.88Z.0178.B00.1806260902</string>
+		<key>Board-ID</key>
+		<string>Mac-827FB448E656EC26</string>
+		<key>BoardManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02845401GUDJWK8C</string>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>1.0</string>
+		<key>ChassisAssetTag</key>
+		<string>MacBook-Aluminum</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>0x09</string>
+		<key>Family</key>
+		<string>MacBook Pro</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFC0FE137</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
+		<key>Manufacturer</key>
+		<string>Apple Inc.</string>
 		<key>Mobile</key>
-		<false/>
+		<true/>
+		<key>PlatformFeature</key>
+		<string>0x1A</string>
 		<key>ProductName</key>
 		<string>MacBookPro15,2</string>
-		<key>Trust</key>
-		<true/>
+		<key>SerialNumber</key>
+		<string>C02XNVZFJHCD</string>
+		<key>Version</key>
+		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>2402B5FC-E7A7-5889-8AD8-86BFA7B0F734</string>
+		<string>4BC7201E-AA4D-5041-858C-91B8B48F65E2</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>

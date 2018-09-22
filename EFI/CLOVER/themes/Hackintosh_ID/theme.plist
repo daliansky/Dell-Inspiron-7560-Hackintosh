@@ -52,7 +52,7 @@
 		<key>Font</key>
 		<dict>
 			<key>CharWidth</key>
-			<integer>10</integer>
+			<integer>12</integer>
 			<key>Path</key>
 			<string>Font_Telegrama_16pt_White.png</string>
 			<key>Proportional</key>
