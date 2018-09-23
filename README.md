@@ -1,4 +1,4 @@
-# Dell Inspiron 7000 (7x60) for macOS High Sierra/Sierra
+# Dell Inspiron 7000 I/II (7x60/7x72) for macOS Mojave/High Sierra
 
 这是我使用的Dell Inspiron 7000(7560)的CLOVER引导文件
 
@@ -48,8 +48,12 @@
 ![5Ethernet](./screenshot/5Ethernet.png)
 ![6USB](./screenshot/6USB.png)
 ![6USBFinal](./screenshot/6USBFinal.png)
+![7Light](./screenshot/7Light.png)
+![8Volume](./screenshot/8Volume.png)
 ![9Drivers](./screenshot/9Drivers.png)
 ![Clover](./screenshot/Clover.png)
+
+
 
 
 ## ALCPlugFix
