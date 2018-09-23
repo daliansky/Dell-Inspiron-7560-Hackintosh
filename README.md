@@ -1,6 +1,6 @@
 # Dell Inspiron 7000 I/II (7x60/7x72) for macOS Mojave/High Sierra
 
-这是我使用的Dell Inspiron 7000(7560)的CLOVER引导文件
+这是我使用的Dell Inspiron 7000(7560)的CLOVER引导文件，它同样也适用于Dell Inspiron 7460/7472/7572等I代II代机型
 
 ## 电脑配置
 
