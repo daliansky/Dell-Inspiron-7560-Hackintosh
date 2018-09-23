@@ -154,7 +154,7 @@
         * WhatEverGreen v1.2.3
         * AppleALC v1.3.2
     * 修改主题文件，适配`Mojave`
-* 9-23-2018
+* 9-24-2018
     * `config.plist`修正
         * 删除`kextstopatch`里面关于`minStolen`的补丁
         * 删除USB端口限制补丁
