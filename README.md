@@ -115,6 +115,13 @@
         * WhatEverGreen v1.2.3
         * AppleALC v1.3.2
     * 修改主题文件，适配`Mojave`
+* 9-23-2018
+    * `config.plist`修正
+        * 删除`kextstopatch`里面关于`minStolen`的补丁
+        * 删除USB端口限制补丁
+    * 添加`USBPower.kext`驱动，删除`SSDT-UIAC-ALL.aml`
+    * 修正`SSDT-PCIList.aml`显示信息
+    * 修正自带主题`Hackintosh_ID`适配`Mojave`图标
 
 
 
