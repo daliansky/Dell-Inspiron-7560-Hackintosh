@@ -24,6 +24,7 @@
 
 * 支持Mojave/High Sierra/Sierra
 * CPU原生支持，变频正常
+* 睡眠唤醒正常，最新增加睡眠呼吸灯
 * 显卡原生支持，采用`Lilu+WhateverGreen`通过`Clover/device/Properties`方式注入，同时支持HDMI显示输出
 * 声卡为ALC256(ALC3246)，使用 `AppleALC` 仿冒，layout-id:2或者56，通过`Clover/device/Properties`方式注入，支持HDMI Audio声音输出
 * 无线网卡更换为bcm94352z，添加`SSDT-7560-DW1560.aml`以解决可能存在的睡眠唤醒后蓝牙失效的问题
@@ -161,6 +162,9 @@
     * 添加`USBPower.kext`驱动，删除`SSDT-UIAC-ALL.aml`
     * 修正`SSDT-PCIList.aml`显示信息
     * 修正自带主题`Hackintosh_ID`适配`Mojave`图标
+* 9-29-2018
+    * 增加睡眠呼吸灯
+    * 添加`DW1560`信息的注入，有效改善睡眠唤醒后蓝牙失效
 
 
 
