@@ -7,7 +7,7 @@
 | 规格     | 详细信息                                              |
 | -------- | ----------------------------------------------------- |
 | 电脑型号 | 戴尔 Inspiron 7560 笔记本电脑                         |
-| 操作系统 | macOS Mojave 18A389/macOS High Sierra 10.13.6 17G2208 |
+| 操作系统 | macOS Mojave 18E226/macOS High Sierra 10.13.6 17G2208 |
 | 处理器   | 英特尔 Core i7-7500U @ 2.70GHz 双核                   |
 | 内存     | 16 GB ( 金士顿 DDR4 2400MHz )                         |
 | 硬盘     | 建兴 CV1-8B512 (512 GB / 固态硬盘 )                   |
@@ -71,11 +71,17 @@
 ## 更新
 
 * 10-4-2017
+
     * 加入显示器edid和HIDPI
+
 * 10-7-2017
+
     * 修复bcm94352z在10.12下的WIFI驱动
+
 * 10-8-2017
+
     * 添加一键开启HIDPI脚本，同时解决内屏黑屏问题，感谢 `冰水加劲Q` 提供的脚本
+
 * 10-17-2017
     * EFI更新，修正显卡驱动
     * 驱动更新：
@@ -85,11 +91,13 @@
         * AirportBrcmFixup v1.1.0
     * 驱动修复：
         * IntelGraphicsFixup v1.2.0 
+
 * 10-21-2017
     * Clover 常规更新 Clover_v2.4k_r4259
     * 驱动更新：
         * FakeSMC v1765
     * 修改BCM94352z驱动方式，将注入信息移动到FakeSMC，移除config.plist中的相关信息
+
 * 11-12-2017
     * Clover 常规更新
         * Clover_v2.4k_r4298
@@ -97,6 +105,7 @@
         * 添加全新id:56
         * 去除底噪
     * ALCPlugFix更新,修复耳机插入状态
+
 * 3-13-2018
 
     * 修改独显屏蔽模式，独显屏蔽更彻底，感谢@宪武
@@ -111,6 +120,7 @@
         * Lilu v1.2.3
         * Shiki v2.2.3
         * AirportBrcmFixup v1.1.1
+
 * 4-9-2018
 
     * Clover常规更新
@@ -123,6 +133,7 @@
       * AppleALC v1.2.6
       * Shiki v2.2.6
       * AirportBrcmFixup v1.1.2
+
 * 7-21-2018
     * 支持`Mojave`/`High Sierra`/`Sierra`
     * CLOVER常规更新
@@ -132,6 +143,7 @@
         * Lilu v1.2.5
         * AppleALC v1.3.0
         * WhateverGreen v1.2.0
+
 * 8-4-2018
     * CLOVER常规更新到v2.4k r4630
         * 使用新的显卡驱动方式，更好地支持10.13/10.14
@@ -139,13 +151,19 @@
         - Lilu v1.2.6
         - AppleALC v1.3.1
         - WhateverGreen v1.2.1
+
 * 8-6-2018
     * Clover添加Disable minStolenSize less or equal fStolenMemorySize assertion，解决卡DVMT；另一种方法请移步：[通过修改DVMT Pre-Allocated解决AppleIntelKBLGraphicsFramebuffer问题](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1730172&page=1#pid46869870)
     * SMBIOS设置为MacBookPro15,2，它只支持10.13.6（17G2112/17G2208)以及10.14Beta版本，旧的系统请使用配置文件`config_MBP141.plist`
+
 * 8-8-2018
+
     * 增加Brcm94352z/DW1560注入信息，解决10.13.6(17G2112/17G2208)/10.14蓝牙失效问题
+
 * 8-11-2018
+
     * 加入了I2C触摸板的支持，开启更多手势
+
 * 9-22-2018
     * 使用`FB Patcher`生成USBPower.kext，弃用`USBInjectAll.kext`和`SSDT-UIAC-ALL.aml`
     * `VoodooI2C`更新到v2.0.1特别版，触摸板支持更多手势，支持双指捏合缩放，支持`Mojave`和`HighSierra`
@@ -155,6 +173,7 @@
         * WhatEverGreen v1.2.3
         * AppleALC v1.3.2
     * 修改主题文件，适配`Mojave`
+
 * 9-24-2018
     * `config.plist`修正
         * 删除`kextstopatch`里面关于`minStolen`的补丁
@@ -162,9 +181,16 @@
     * 添加`USBPower.kext`驱动，删除`SSDT-UIAC-ALL.aml`
     * 修正`SSDT-PCIList.aml`显示信息
     * 修正自带主题`Hackintosh_ID`适配`Mojave`图标
+
 * 9-29-2018
     * 增加睡眠呼吸灯
     * 添加`DW1560`信息的注入，有效改善睡眠唤醒后蓝牙失效
+
+* 4-6-2019
+
+    * 更新支持到Mojave 10.14.4
+    * 常规驱动更新
+
 
 
 
