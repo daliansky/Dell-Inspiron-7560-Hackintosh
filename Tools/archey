@@ -121,13 +121,13 @@ uptime="${uptime:-${seconds} seconds}"
 # model
 if [[ "$(kextstat | grep "FakeSMC")" != "" ]]; then
   #model="$(ioreg -c FakeSMCKeyStore | grep product-name | sed -e's/"//g' | sed -e 's/|//g' | sed -e 's/product-name = //g' | sed -e 's/  //g') (SMBIOS: $(sysctl -n hw.model))"
-  model="$(bdmesg | grep ProductName | grep ProductName | sed '{print $7}')"
+  model="$(bdmesg | grep ProductName | grep ProductName | awk '{print $7}')"
 else
   model="$(sysctl -n hw.model)"
 fi
 
 # Mainboard
-mb="$(bdmesg | grep Z370 | awk '{print $8,$9,$10}' | sed "s/'Z/Z/g" | sed "s/)'/)/g")"
+mb="$(bdmesg | grep "Running on" | egrep -o "with board (.+)" | cut -c 12- | sed "s/'//g")"
 
 # System Variables
 # User="$(osascript -e "computer name of (system info)")"
@@ -138,7 +138,7 @@ Date=$(date | sed 's/CST//g')
 # IP=$(osascript -e "IPv4 address of (system info)")
 # IP=`echo $(ifconfig | grep 'inet.*netmask.*broadcast') | awk '{print $2}'`
 Intranet=$(osascript -e "IPv4 address of (system info)")
-Public=$(dig +short myip.opendns.com @resolver1.opendns.com)
+Public=$(curl -s https://api.ip.sb/ip)
 System_version="$codename $osx_version $osx_build"
 Kernel_version="$(uname) $(uname -r)"
 Uptime=$(uptime | sed 's/.*up \([^,]*\), .*/\1/')
