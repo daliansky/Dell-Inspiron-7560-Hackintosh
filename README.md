@@ -179,6 +179,10 @@
     * 修正`PCIList`信息
     * 添加开机声音
     * 修改电池驱动为`SMCBatteryManager.kext`
+* 5-19-2019
+    * 更新`CLOVER`到v4928
+    * 添加`ComboJack`，解决耳麦输入
+    * 修改`ALCPlugfix`，支持睡眠唤醒后`内置麦克风`和`耳麦`完美切换
 
 
 
