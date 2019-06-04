@@ -183,6 +183,10 @@
     * 更新`CLOVER`到v4928
     * 添加`ComboJack`，解决耳麦输入
     * 修改`ALCPlugfix`，支持睡眠唤醒后`内置麦克风`和`耳麦`完美切换
+* 6-4-2019
+    * 更新 CLOVER 到 v4940
+    * 添加 macOS Catalina 支持
+    * 常规驱动更新
 
 
 
