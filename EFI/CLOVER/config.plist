@@ -671,18 +671,16 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 Release kernel</string>
+				<string>Disable panic kext logging on kernel by DalianSky</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				igKEwHRE
+				igKEwHQ=
 				</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
 				<key>Replace</key>
 				<data>
-				igKEwOtE
+				igKEwOs=
 				</data>
 			</dict>
 			<dict>
@@ -697,34 +695,6 @@
 				<key>Replace</key>
 				<data>
 				ILniAAAAkJA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 Release kernel (c) vit9696</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				igKEwHRC
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Replace</key>
-				<data>
-				igKEwOtC
-				</data>
-			</dict>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AIXAD4SHAAAASQ==
-				</data>
-				<key>Replace</key>
-				<data>
-				AIXAkJCQkJCQSQ==
 				</data>
 			</dict>
 		</array>
@@ -826,7 +796,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB port limit patch #1 for 10.14.x/10.15 modify by DalianSky(credit ydeng)</string>
+				<string>USB Port limit patch 10.14.x 10.15.x #1 modify by DalianSky(credits PMheart)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -844,7 +814,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB port limit patch #2 for 10.14.x/10.15 modify by DalianSky(credit PMHeart)</string>
+				<string>USB port limit patch 10.14.x modify by DalianSky(credit PMHeart)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -862,7 +832,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Port limit patch #3 for 10.15.x modify by DalianSky</string>
+				<string>USB Port limit patch 10.15.x #1 modify by DalianSky</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -876,6 +846,42 @@
 				<key>Replace</key>
 				<data>
 				g/k/Dw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port limit patch 10.14.x modify by DalianSky(credits PMheart)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/sPDw==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g/s/Dw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port limit patch 10.14.x modify by DalianSky(credits PMheart)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/8PDw==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g/8/Dw==
 				</data>
 			</dict>
 		</array>
@@ -894,8 +900,6 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>CustomUUID</key>
-		<string>4BC7201E-AA4D-5041-858C-91B8B48F65E2</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
