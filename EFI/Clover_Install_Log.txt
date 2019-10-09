@@ -1,0 +1,67 @@
+
+Clover EFI installer log - Sun Sep 23 16:08:36 CST 2018
+Installer version: v2.4k r4672 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *512.1 GB   disk0
+   1:                        EFI ESP                     524.3 MB   disk0s1
+   2:       Microsoft Basic Data WINDOWS10               65.7 GB    disk0s2
+   3:                 Apple_APFS Container disk2         31.5 GB    disk0s3
+   4:                 Apple_APFS Container disk3         100.4 GB   disk0s4
+   5:                  Apple_HFS DATAS                   205.3 GB   disk0s5
+   6:       Apple_KernelCoreDump                         655.4 MB   disk0s6
+   7:                  Apple_HFS 10.12.6                 56.8 GB    disk0s7
+   8:                 Apple_Boot Recovery HD             650.0 MB   disk0s8
+   9:                  Apple_HFS Install macOS High S... 9.2 GB     disk0s9
+  10:           Linux Filesystem                         10.0 GB    disk0s10
+  11:                  Apple_HFS 10.14                   30.4 GB    disk0s11
+  12:                 Apple_Boot Recovery HD             650.0 MB   disk0s12
+
+/dev/disk1 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk1
+   1:                        EFI ESP_HDD                 209.7 MB   disk1s1
+   2:                FreeBSD UFS                         120.3 GB   disk1s2
+   3:       Microsoft Basic Data BackUp                  213.5 GB   disk1s3
+   4:       Microsoft Basic Data DATAS2                  285.8 GB   disk1s4
+   5:                  Apple_HFS TimeMachine             379.9 GB   disk1s5
+
+/dev/disk2 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +31.5 GB    disk2
+                                 Physical Store disk0s3
+   1:                APFS Volume 10.13.6_17G2112         15.3 GB    disk2s1
+   2:                APFS Volume Preboot                 21.8 MB    disk2s2
+   3:                APFS Volume Recovery                515.8 MB   disk2s3
+   4:                APFS Volume VM                      1.1 GB     disk2s4
+
+/dev/disk3 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +100.4 GB   disk3
+                                 Physical Store disk0s4
+   1:                APFS Volume MAC                     64.3 GB    disk3s1
+   2:                APFS Volume Preboot                 125.1 MB   disk3s2
+   3:                APFS Volume Recovery                2.6 GB     disk3s3
+   4:                APFS Volume VM                      20.5 KB    disk3s4
+
+Target volume /Volumes/MAC on disk3 is APFS on physical store disk0s4
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/MAC/EFIROOTDIR/EFI folder to /Volumes/MAC/EFI-Backups/r4672/2018-09-23-16h08/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+======================================================
+Installing RC Scripts
+
+Installing RC scripts on target volume '/'
+
+Activating /etc/rc.boot.d/70.disable_sleep_proxy_client.local rc script
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================

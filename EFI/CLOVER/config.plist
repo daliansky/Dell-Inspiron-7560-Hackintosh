@@ -300,7 +300,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>darkwake=8 brcmfx-driver=1 brcmfx-country=CN</string>
+		<string>darkwake=8 brcmfx-driver=1 brcmfx-country=#a -lilubetaall</string>
 		<key>CustomLogo</key>
 		<string>Theme</string>
 		<key>Debug</key>
